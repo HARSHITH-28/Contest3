@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #0f0f0f 0%, #1a1a1a 100%);
+  font-family: 'Roboto', sans-serif;
+  color: #e6e6e6;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #1e1e2f;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.7);
+  transform: scale(1.01);
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px #ff01018e;
+}
+
+.level h2 {
+  font-size: 1.8rem;
+  color: #87ceeb;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.level h2:hover {
+  color: #00ffff;
+  border-bottom: 2px solid #ffd700;
+}
+
+.story, .clue, .final-key {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #8a2be2;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story:hover,
+.clue:hover,
+.final-key:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #ffd700aa;
+}
+
+.story h3,
+.clue h3,
+.final-key h3 {
+  color: #ffa500;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.story h3:hover,
+.clue h3:hover,
+.final-key h3:hover {
+  color: #ff69b4;
+  cursor: pointer;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style-type: square;
+}
+
+.subpoints {
+  margin-top: 0.5rem;
+  list-style-type: disc;
+  color: #7fffd4;
+}
+
+.subpoints li:hover {
+  color: #ffd700;
+  cursor: pointer;
+  text-shadow: 0 0 5px #ffd700;
+}
+
+strong {
+  color: #00ffff;
+  transition: color 0.3s ease;
+}
+
+strong:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff;
+}
